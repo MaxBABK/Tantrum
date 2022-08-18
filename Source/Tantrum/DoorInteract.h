@@ -36,16 +36,18 @@ protected:
 	FVector StartLocation = FVector::Zero();
 	FVector FinalLocation = FVector::Zero();
 	
-	
+	bool HasStarted = false;
 
 	UPROPERTY(EditAnywhere)
 	float TimeToRotate = 1.0F;
 	UPROPERTY(EditAnywhere)
-	float TimeToReturn = 1.0F;
+	float ReturnSpeed = 1.0F;
 
 	float CurrentRotationTime = 0.0F;
 	float CurrentReturnTime = 0.0F;
 
+	UPROPERTY(EditAnywhere)
+	bool ChangeLocation = true;
 
 
 
